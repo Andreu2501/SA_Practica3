@@ -19,7 +19,7 @@ app.post('/PostOrden',body,(req,res)=>{
 });
 
 /**Estado del pedido */
-app.get('/GetEstado/:order',(req,res)=>{
+app.get('/GetEstado/:orden',(req,res)=>{
     var detalle_estado = "Hemos recibido la solicitud del estado de la orden";
     var estado = Math.floor(Math.random() * (2-1)+1);
     if(estado==1){
@@ -34,7 +34,7 @@ app.post('/PostAvisoRepartidor',(req,res)=>{
     var detalle_estado = "La orden: Esta lista para enviar";
     console.log(detalle_estado);
     detalle_estado = "Restaurante: La orden ya fue asignada a un repartidor ";
-    l_axios.post('http://localhost:8002/Orden');
+    l_axios.post('http://localhost:8003/Repartidor/Orden');
     res.json(detalle_estado);
     
 });
