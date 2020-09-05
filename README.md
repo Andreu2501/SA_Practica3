@@ -1,5 +1,5 @@
 # Practica#4
-Aplicación de un servicio de comida que contiene 3 microservicios
+Aplicación de un servicio de comida que contiene 3 microservicios implentando un Orquestador
 ## Cliente
 * Solicitar pedido al restaurante
 * Verificar estado del pedido al restaurante
